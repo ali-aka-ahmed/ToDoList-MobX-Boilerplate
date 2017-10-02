@@ -1,3 +1,20 @@
+This project is a boilerplate version of a To Do List React + MobX tutorial. The presentation / docs are linked here:
+https://docs.google.com/presentation/d/1JYJyiLsskV6W5wEXJYDXnDYp5Iu2bo1UUUXnd-IfIAQ/edit?usp=sharing
+
+Follow along with the presentation, as it explains how these technologies actually work and why you are doing what you are doing.
+
+There is a completed repo that you can use to check your work. That is available here:
+https://github.com/aahmed19/ToDoList-MobX-Complete
+
+I recommend you implement the app using State + Props first. Then, after experiencing issues using this data model, integrate MobX.
+
+You'll notice if you refresh the page everything disappears. This is because there is no backend server + db.
+
+As an extra step, integrate Firebase to make the list persist over sessions.
+
+Credit to Graham Allen @ Way2B1 for teaching me this!
+_____
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>

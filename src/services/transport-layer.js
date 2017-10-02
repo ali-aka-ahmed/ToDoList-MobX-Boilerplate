@@ -7,12 +7,7 @@ export const setTasks = (new_tasks) => sessionStorage.setItem(TASKS, JSON.string
 
 ///// TASKS
 let config = {
-    apiKey: "AIzaSyDARxRPcDhqlrzn36-nKxAIQK6oVMGARao",
-    authDomain: "todolist-f6394.firebaseapp.com",
-    databaseURL: "https://todolist-f6394.firebaseio.com",
-    projectId: "todolist-f6394",
-    storageBucket: "todolist-f6394.appspot.com",
-    messagingSenderId: "303468340463"
+    // FIREBASE CONFIG KEYS
 };
 
 firebase.initializeApp(config);

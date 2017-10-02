@@ -1,38 +1,24 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-import ItemList from './components/item_list';
-import AddItem from './components/add_item';
+import ItemList from './components/itemList';
+import AddItem from './components/addItem';
 import {observer} from 'mobx-react';
-import textBoxState from './stores/TextBox';
-import appState from './stores/Tasks';
+import textBoxState from './stores/textBoxState';
+import appState from './stores/appState';
 import {Provider} from 'mobx-react';
+// Look at MobX docs to see how to use Provider!
 
 @observer
 class App extends Component {
 
-    componentWillMount() {
-      appState.initializeFromDatabase();
-    }
-
-    componentWillUnmount() {
-        appState.removeFireRef();
-    }
-
-  render() {
-    return (
-        <Provider appState={appState}>
-          <div className="App">
-            {/*<div className="App-header">*/}
-              {/*<img src={logo} className="App-logo" alt="logo"/>*/}
-              {/*<h2>What To Do</h2>*/}
-            {/*</div>*/}
-            <AddItem textBoxState={textBoxState} />
-            <ItemList appState={appState} />
-          </div>
-        </Provider>
-    );
-  };
+    render() {
+        return (
+            <div className="App">
+                <AddItem textBoxState={textBoxState} />
+                <ItemList appState={appState} />
+            </div>
+        );
+    };
 }
 
 export default App;
